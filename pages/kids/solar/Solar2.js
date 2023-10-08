@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     },
     button: {
       position: 'absolute',
-      top: 500, // Adjust the top position as needed
+      top: 100, // Adjust the top position as needed
       right: 20, // Adjust the right position as needed
       backgroundColor: 'blue', // Change to your desired button style
       padding: 10,
