@@ -2,18 +2,18 @@ import { View, Text, ImageBackground, StyleSheet, TouchableOpacity } from 'react
 import React, { useEffect } from 'react';
 import { useNavigation } from '@react-navigation/native';
 
-const Info1 = () => {
+const Info2 = () => {
   const navigation = useNavigation();
 
   const navigateToNextPage = () => {
     // Navigate to the next page here (e.g., "Young" or any desired screen name)
-    navigation.navigate("Solar2");
+    navigation.navigate("Info3");
   };
 
   return (
     <View>
       <ImageBackground 
-        source={require('../../../assets/info1.png')}
+        source={require('../../../assets/info2.png')}
         style={styles.fullscreen}
       >
         <TouchableOpacity
@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     },
     button: {
       position: 'absolute',
-      top: 100, // Adjust the top position as needed
+      top: 50, // Adjust the top position as needed
       right: 20, // Adjust the right position as needed
       backgroundColor: 'blue', // Change to your desired button style
       padding: 10,
@@ -51,4 +51,4 @@ const styles = StyleSheet.create({
     },
   });
 
-export default Info1;
+export default Info2;

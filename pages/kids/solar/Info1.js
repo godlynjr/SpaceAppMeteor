@@ -7,7 +7,7 @@ const Info1 = () => {
 
   const navigateToNextPage = () => {
     // Navigate to the next page here (e.g., "Young" or any desired screen name)
-    navigation.navigate("Solar2");
+    navigation.navigate("Info2");
   };
 
   return (

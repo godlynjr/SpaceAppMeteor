@@ -2,18 +2,17 @@ import { View, Text, ImageBackground, StyleSheet, TouchableOpacity } from 'react
 import React from 'react'
 import { useNavigation } from '@react-navigation/native';
 
-const Learn = () => {
+const DoneS = () => {
   const navigation = useNavigation();
   return (
     <ImageBackground
-        source={require('../../../assets/learnmore.png')} // Replace with your background image
+        source={require('../../../assets/eclipseStack.png')} // Replace with your background image
         style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}
       >
         <View style={styles.container}>
-
-          <TouchableOpacity style={styles.button2} onPress={() => navigation.navigate("Info1")}>
+          <TouchableOpacity style={styles.button} onPress={() => navigation.navigate("EclipseMenu")}>
             <View>
-              <Text style={styles.text}>Let's go !</Text>
+              <Text style={styles.text}>Done</Text>
             </View>
           </TouchableOpacity>
         </View>
@@ -28,11 +27,10 @@ const styles = StyleSheet.create({
     height: 30, // Adjust the size of your star
   },
   container: {
-    top: 170,
+    top: 70,
     width: "70%",
     alignContent: 'center',
     justifyContent: 'center',
-    // backgroundColor: 'white',
   },
   title: {
     color: 'black',
@@ -72,4 +70,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Learn
+export default DoneS
